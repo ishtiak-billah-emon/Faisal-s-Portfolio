@@ -1,0 +1,165 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Academic Blue Theme */
+    --background: 225 40% 98%;
+    --foreground: 0 0% 20%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 20%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 20%;
+
+    /* Deep Academic Blue */
+    --primary: 213 62% 26%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Bright Sky Blue */
+    --secondary: 213 82% 59%;
+    --secondary-foreground: 0 0% 100%;
+
+    /* Matte Gold */
+    --accent: 45 71% 47%;
+    --accent-foreground: 0 0% 100%;
+
+    /* Mint Green */
+    --success: 134 60% 72%;
+    --success-foreground: 0 0% 20%;
+
+    --muted: 220 14% 96%;
+    --muted-foreground: 220 9% 46%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 220 13% 91%;
+    --input: 220 13% 91%;
+    --ring: 213 82% 59%;
+
+    --radius: 0.75rem;
+
+    /* Custom gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(213 62% 26%) 0%, hsl(213 82% 59%) 100%);
+    --gradient-gold: linear-gradient(135deg, hsl(45 71% 47%) 0%, hsl(45 80% 60%) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(220 14% 96%) 100%);
+
+    /* Shadows */
+    --shadow-soft: 0 4px 20px -2px hsl(213 62% 26% / 0.1);
+    --shadow-card: 0 10px 40px -10px hsl(213 62% 26% / 0.15);
+    --shadow-hover: 0 20px 50px -15px hsl(213 62% 26% / 0.25);
+    --shadow-gold: 0 4px 20px -2px hsl(45 71% 47% / 0.3);
+  }
+
+  .dark {
+    --background: 215 28% 7%;
+    --foreground: 210 29% 93%;
+
+    --card: 215 19% 11%;
+    --card-foreground: 210 29% 93%;
+
+    --popover: 215 19% 11%;
+    --popover-foreground: 210 29% 93%;
+
+    --primary: 212 84% 52%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 213 62% 26%;
+    --secondary-foreground: 210 29% 93%;
+
+    --accent: 45 71% 47%;
+    --accent-foreground: 0 0% 100%;
+
+    --muted: 215 19% 15%;
+    --muted-foreground: 210 20% 65%;
+
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 210 29% 93%;
+
+    --border: 215 19% 17%;
+    --input: 215 19% 17%;
+    --ring: 212 84% 52%;
+
+    --gradient-hero: linear-gradient(135deg, hsl(215 28% 7%) 0%, hsl(215 19% 20%) 100%);
+    --shadow-soft: 0 4px 20px -2px hsl(0 0% 0% / 0.3);
+    --shadow-card: 0 10px 40px -10px hsl(0 0% 0% / 0.4);
+    --shadow-hover: 0 20px 50px -15px hsl(0 0% 0% / 0.5);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground font-inter antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-poppins font-bold;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-card/80 backdrop-blur-md border border-border/50 rounded-2xl;
+    box-shadow: var(--shadow-card);
+  }
+
+  .gradient-text {
+    @apply bg-clip-text text-transparent;
+    background-image: var(--gradient-hero);
+  }
+
+  .gold-highlight {
+    @apply text-accent font-semibold;
+  }
+
+  .math-icon {
+    @apply text-secondary/30 font-poppins font-bold select-none pointer-events-none;
+  }
+}
+
+@layer utilities {
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-float-delayed {
+    animation: float 6s ease-in-out infinite 2s;
+  }
+
+  .animate-float-slow {
+    animation: float 8s ease-in-out infinite 1s;
+  }
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+      transform: translateY(-20px) rotate(5deg);
+    }
+  }
+
+  .animate-pulse-gold {
+    animation: pulse-gold 2s ease-in-out infinite;
+  }
+
+  @keyframes pulse-gold {
+    0%, 100% {
+      box-shadow: 0 0 0 0 hsl(45 71% 47% / 0.4);
+    }
+    50% {
+      box-shadow: 0 0 20px 10px hsl(45 71% 47% / 0);
+    }
+  }
+}
