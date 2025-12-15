@@ -1,73 +1,163 @@
-# Welcome to your Lovable project
+📘 Math Teacher Portfolio – 10 Minute School (Client Project)
 
-## Project info
+A modern, responsive, and professionally designed portfolio website built for a Math Instructor from 10 Minute School.
+This project showcases the teacher’s experience, courses, teaching philosophy, achievements, and contact details — with a clean academic design.
 
-**URL**: https://lovable.dev/projects/dd84439c-015e-4b1d-b8e7-6aa6a6f0e666
+🚀 Features
+🔹 Hero Section
 
-## How can I edit this code?
+Professional portrait
 
-There are several ways of editing your application.
+Title: Math Instructor
 
-**Use Lovable**
+Animated floating math symbols
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/dd84439c-015e-4b1d-b8e7-6aa6a6f0e666) and start prompting.
+Call-to-action buttons
 
-Changes made via Lovable will be committed automatically to this repo.
+🔹 About Section
 
-**Use your preferred IDE**
+Teaching philosophy
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+Personal introduction
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Two-column responsive layout
 
-Follow these steps:
+🔹 Experience Section
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+Math Instructor at 10 Minute School
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+Private tutoring timeline
 
-# Step 3: Install the necessary dependencies.
-npm i
+Clean card-based UI
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+🔹 Courses Section
 
-**Edit a file directly in GitHub**
+Dynamic course list
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+Thumbnails and descriptions
 
-**Use GitHub Codespaces**
+“Watch Now” CTA for each course
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+🔹 Achievements
 
-## What technologies are used for this project?
+Student reach metrics
 
-This project is built with:
+Awards & milestones
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Animated count-up effects
 
-## How can I deploy this project?
+🔹 Testimonials
 
-Simply open [Lovable](https://lovable.dev/projects/dd84439c-015e-4b1d-b8e7-6aa6a6f0e666) and click on Share -> Publish.
+Student feedback
 
-## Can I connect a custom domain to my Lovable project?
+Carousel/grid layout
 
-Yes, you can!
+🔹 Education
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Bachelor's & Master’s degree timeline
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+🔹 Skills Section
+
+Mathematics skills
+
+Content creation expertise
+
+UI icon-based skill representation
+
+🔹 Contact Section
+
+Contact form
+
+Social links
+
+Email button
+
+🛠️ Tech Stack
+Frontend
+
+React (TypeScript)
+
+Tailwind CSS
+
+Vite
+
+Framer Motion (animations)
+
+React Icons
+
+Tools
+
+Git & GitHub
+
+VS Code
+
+Image optimization tools
+
+🎨 Design System
+Color Palette
+
+Primary Blue: #1A3E6B
+
+Secondary Blue: #3E8EED
+
+Gold Accent: #C9A227
+
+Mint Green: #8FE3A1
+
+Light Background: #F8F9FC
+
+Typography
+
+Headings: Poppins / Inter
+
+Body: Inter / Roboto
+
+Math Symbols: SVG-based icons
+
+📁 Project Structure
+portfolio/
+├── node_modules/
+├── public/
+├── src/
+│   ├── assets/
+│   │   ├── faisalImg.jpg
+│   │   └── instructor-portrait.jpg
+│   │
+│   ├── components/
+│   │   ├── ui/
+│   │   │   ├── AboutSection.tsx
+│   │   │   ├── AchievementsSection.tsx
+│   │   │   ├── ContactSection.tsx
+│   │   │   ├── CoursesSection.tsx
+│   │   │   ├── EducationSection.tsx
+│   │   │   ├── ExperienceSection.tsx
+│   │   │   ├── Footer.tsx
+│   │   │   ├── HeroSection.tsx
+│   │   │   ├── Navbar.tsx
+│   │   │   ├── NavLink.tsx
+│   │   │   ├── SkillsSection.tsx
+│   │   │   └── TestimonialsSection.tsx
+│   │   │
+│   │   ├── hooks/
+│   │   ├── lib/
+│   │   │   └── utils.ts
+│   │
+│   ├── pages/
+│   │   ├── Index.tsx
+│   │   └── NotFound.tsx
+│   │
+│   ├── App.tsx
+│   ├── index.css
+│   ├── main.tsx
+│   └── vite-env.d.ts
+│
+├── .gitignore
+├── bun.lockb
+├── components.json
+├── eslint.config.js
+├── index.html
+├── package.json
+├── package-lock.json
+├── postcss.config.js
+├── README.md
+└── tailwind.config.ts
